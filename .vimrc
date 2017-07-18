@@ -1,16 +1,29 @@
 set rtp+=~/.vim/bundle/Vundle.vim				" vundle
 call vundle#begin()
 
+"Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
 Plugin 'vim-statline'
 Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 filetype plugin on
 
-
+set statusline
 set hidden
 set nowrap                                      " don't wrap lines
 set tabstop=4                                  " a tab is four spaces
+
+" Reduce timeout after <ESC> is recieved.
+set ttimeout
+set ttimeoutlen=20
+set notimeout
+
+set backspace=2   " Backspace deletes like most programs in insert mode
+set hlsearch      " highlight matches
+
+" Fuzzy finder: ignore stuff that can't be opened, and generated files
+let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
 
 set backspace=indent,eol,start       " allow backspacing over everything in insert mode
 set autoindent                                 " always set autoindenting on
