@@ -9,8 +9,16 @@ export PATH
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 
-##
-# Your previous /Users/Nishchith/.bash_profile file was backed up as /Users/Nishchith/.bash_profile.macports-saved_2017-03-17_at_21:51:24
+
+ #Your previous /Users/Nishchith/.bash_profile file was backed up as /Users/Nishchith/.bash_profile.macports-saved_2017-03-17_at_21:51:24
+export LANG="it_IT.UTF-8"  
+export LC_COLLATE="it_IT.UTF-8"  
+export LC_CTYPE="it_IT.UTF-8"  
+export LC_MESSAGES="it_IT.UTF-8"  
+export LC_MONETARY="it_IT.UTF-8"  
+export LC_NUMERIC="it_IT.UTF-8"  
+export LC_TIME="it_IT.UTF-8"  
+export LC_ALL=  
 ##
 
 # MacPorts Installer addition on 2017-03-17_at_21:51:24: adding an appropriate PATH variable for use with MacPorts.
