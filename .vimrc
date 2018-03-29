@@ -2,7 +2,7 @@
 
 " About : Personal .vimrc
 " Maintainer : inishchith ( inishchith@gmail.com) 
-" last_updated : 01-10-17
+" last_updated : 29-03-18
 "
 
 """
@@ -15,8 +15,8 @@ set rtp+=~/.vim/bundle/Vundle.vim			" vundle
 call vundle#begin()
 
 
-"Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-statline'
 Plugin 'itchyny/lightline.vim'
@@ -24,14 +24,13 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()
 filetype plugin on
 
-set statusline
+"set statusline
 set hidden
 set nowrap                                  " don't wrap lines
 set tabstop=4                               " a tab is four spaces
 set cmdheight=1						
 
-											" Reduce timeout after <ESC> is recieved.
-set ttimeout
+set ttimeout 								" Reduce timeout after <ESC> is recieved.
 set ttimeoutlen=20
 set notimeout
 
@@ -40,7 +39,6 @@ set hlsearch      							" highlight matches
 set ai										" set auto indent 
 set si 										" set smart indent
 set wrap									" Wrap line
-
 
 											" Fuzzy finder: ignore stuff that can't be opened, and generated files
 let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;tmp/**;rdoc/**"
@@ -61,15 +59,24 @@ set showmode                                " show commands in command-line
 
 set splitright             					" Open new windows right of the current window.
 
-set mouse=a									" use mouse 
+set mouse=a								" use mouse 
 set ruler 									" Always show current position 
 
 
 autocmd ColorScheme * highlight StatusLine ctermbg=darkgray cterm=NONE guibg=darkgray gui=NONE
 
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+
+
+let g:airline_theme='onedark'
+let g:airline#extensions#tabline#enabled = 1
+
+
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
-let g:badwolf_darkgutter = 0
-let g:badwolf_tabline = 0
-colorscheme molokai
+let g:onedark_termcolors=256
+" let g:badwolf_darkgutter = 0
+" let g:badwolf_tabline = 0
+colorscheme onedark
