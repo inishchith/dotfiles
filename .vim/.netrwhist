@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/Nishchith/test_area_pip/concall-web/djhack/issues/templates/issues'
-let g:netrw_dirhist_2='/Users/Nishchith/twi-news'
-let g:netrw_dirhist_3='/Users/Nishchith/GitHub/cltk/docs/_static'
-let g:netrw_dirhist_4='/Users/Nishchith/GitHub/Briefly/App'
-let g:netrw_dirhist_5='/Users/Nishchith/GitHub/Briefly/.git/refs'
-let g:netrw_dirhist_6='/Users/Nishchith/GitHub/Briefly/.git/info'
-let g:netrw_dirhist_7='/Users/Nishchith/GitHub/cltk/cltk/corpus/marathi'

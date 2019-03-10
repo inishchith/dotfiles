@@ -1,10 +1,12 @@
 [filter "lfs"]
-	smudge = git-lfs smudge %f
 	required = true
-	clean = git-lfs clean %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [user]
 	name = inishchith
 	email = inishchith@gmail.com
+	signingkey = rsa2048
 [core]
 	editor = vim
 [color]
